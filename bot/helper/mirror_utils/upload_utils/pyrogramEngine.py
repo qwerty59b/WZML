@@ -390,8 +390,8 @@ class TgUploader:
 
             if self.__as_doc or force_document or (not is_video and not is_audio and not is_image):
                 key = 'documents'
-                if is_video and thumb is None:
-                    thumb = await take_ss(self.__up_path, None)
+                #if is_video and thumb is None:
+                    #thumb = await take_ss(self.__up_path, None)
                 if self.__is_cancelled:
                     return
                 buttons = await self.__buttons(self.__up_path, is_video)
