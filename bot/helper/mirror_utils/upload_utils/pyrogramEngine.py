@@ -416,8 +416,8 @@ class TgUploader:
             elif is_video:
                 key = 'videos'
                 duration = (await get_media_info(self.__up_path))[0]
-                if thumb is None:
-                    thumb = await take_ss(self.__up_path, duration)
+                #if thumb is None:
+                    #thumb = await take_ss(self.__up_path, duration)
                 if thumb is not None:
                     with Image.open(thumb) as img:
                         width, height = img.size
