@@ -416,14 +416,14 @@ class TgUploader:
             elif is_video:
                 key = 'videos'
                 duration = (await get_media_info(self.__up_path))[0]
-                if thumb is None:
-                    thumb = await take_ss(self.__up_path, duration)
-                if thumb is not None:
-                    with Image.open(thumb) as img:
-                        width, height = img.size
-                else:
-                    width = 480
-                    height = 320
+                #if thumb is None:
+                    #thumb = await take_ss(self.__up_path, duration)
+                #if thumb is not None:
+                    #with Image.open(thumb) as img:
+                       # width, height = img.size
+                #else:
+                    #width = 480
+                    #height = 320
                 if not self.__up_path.upper().endswith(("MKV", "MP4")):
                     dirpath, file_ = self.__up_path.rsplit('/', 1)
                     if self.__listener.seed and not self.__listener.newDir and not dirpath.endswith("/splited_files_mltb"):
