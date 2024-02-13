@@ -1,4 +1,4 @@
-FROM luffy01/koyebwzml:latest
+FROM luffy01/koyebaeon:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
